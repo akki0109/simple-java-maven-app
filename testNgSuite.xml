@@ -1,0 +1,53 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<suite name="TS-7 April-07-2014">
+<test name="testFactory">
+<classes>
+<class name="FactoryTest"/>
+...
+</classes>
+...
+</test>
+<test name="testDataProvider">
+<classes>
+<class name="DataProviderTest"/>
+...
+</classes>
+...
+</test>
+<test name="testCaculate">
+<classes>
+<class name="CalculatorTestSuccessful"/>
+...
+</classes>
+...
+</test>
+<test name="testMessagePrintout">
+<classes>
+<class name="WelcomeMessageTest"/>
+...
+</classes>
+...
+</test>
+<test name="TestClass">
+<classes>
+<class name="TestClass"/>
+...
+</classes>
+...
+</test>
+<test name="TestClassSecond">
+<classes>
+<class name="TestClassSecond"/>
+...
+</classes>
+...
+</test>
+<test name="testOpenBrowserOnChrome">
+<classes>
+<class name="OpenBrowser"/>
+...
+</classes>
+...
+</test>
+...
+</suite>
