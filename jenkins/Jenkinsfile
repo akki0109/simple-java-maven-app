@@ -1,12 +1,15 @@
 pipeline {
         agent {
-  label 'docker'
-}
+                label 'docker'
+              }
+        tools {
+                maven 'mavvu'
+              }
     stages {
         stage('Build') {
             steps {
     
-                sh 'echo hello'
+                sh 'mvn clean install -f pom.xml'
             }
         }
         stage('Test') {
