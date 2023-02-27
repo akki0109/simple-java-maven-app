@@ -6,12 +6,18 @@ pipeline {
                 maven 'mavvu'
               }
     stages {
-        stage('Build') {
-            steps {
-    
-                sh 'mvn clean install -f pom.xml'
-            }
-        }
+        stage('run-parallel-branches') {
+           steps {
+               parallel(
+                   a: {
+                       sh 'mvn clean install -f pom.xml'
+                      },
+                   b: {
+                       echo "parellel stage works !"
+                      }
+                      )
+                 }
+        }       
         stage('Test') {
             steps {
                 sh 'mvn test'
