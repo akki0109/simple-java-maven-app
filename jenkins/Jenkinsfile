@@ -31,8 +31,8 @@ pipeline {
         stage('Deliver') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
-            }
-            testNG reportFilenamePattern: 'testNgSuite.xml'
+                testNG reportFilenamePattern: 'testNgSuite.xml'
+            } 
         }    
     }
 }
